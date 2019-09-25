@@ -114,7 +114,7 @@ In theory, the [Reproducible Execution Environment Specification](https://repo2d
 
 3. Distributing images as files
 
-For scientific results it is standard procedure to store both the source (the code) and the results (the pipeline outputs) in cloud storage. Arkhiver makes this easy through the `package` and `load` commands, which pack and unpack built images into standalone files. These commands are basically thin wrappers around `docker save` and `docker load`.
+For the long-term archival of scientific results it is desirable to store both the source (the code), the results (the pipeline outputs) and the executable image (docker image) in cloud storage. Arkhiver makes this easy through the `package` and `load` commands, which pack and unpack built images into standalone files. These commands are basically thin wrappers around `docker save` and `docker load`.
 
 ``` bash
 arkhiver package/load <built image> <output>
